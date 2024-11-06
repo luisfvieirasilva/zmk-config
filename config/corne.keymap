@@ -48,6 +48,7 @@
             tapping-term-ms = <220>;
             flavor = "balanced";
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            hold-trigger-on-release;
         };
 
         r_tl: right_thumb_layer {
@@ -59,6 +60,7 @@
             tapping-term-ms = <220>;
             flavor = "hold-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            hold-trigger-on-release;
         };
 
         l_tls: left_thumb_layer_sk {
@@ -70,6 +72,7 @@
             tapping-term-ms = <220>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            hold-trigger-on-release;
         };
 
         csk: custom-sticky-key {
