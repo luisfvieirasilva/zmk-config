@@ -48,7 +48,6 @@
             tapping-term-ms = <220>;
             flavor = "balanced";
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-            hold-trigger-on-release;
         };
 
         r_tl: right_thumb_layer {
@@ -60,19 +59,17 @@
             tapping-term-ms = <220>;
             flavor = "hold-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-            hold-trigger-on-release;
         };
 
-        r_tls: right_thumb_layer_sk {
+        l_tls: left_thumb_layer_sk {
             compatible = "zmk,behavior-hold-tap";
-            label = "R_TLS";
+            label = "L_TLS";
             bindings = <&mo>, <&csk>;
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
 
         csk: custom-sticky-key {
@@ -97,10 +94,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y          &kp U              &kp I            &kp O             &kp P            &kp DELETE
-&none  &l_hm LGUI A  &l_hm LALT S  &l_hm LCTRL D  &l_hm LSHFT F  &kp G          &kp H          &r_hm RSHIFT J     &r_hm RCTRL K    &r_hm LEFT_ALT L  &r_hm LGUI SEMI  &caps_word
-&none  &kp Z         &kp X         &kp C          &kp V          &kp B          &kp N          &kp M              &kp COMMA        &kp DOT           &kp FSLH         &none
-                                   &l_tl 6 ESC    &l_tl 4 SPACE  &l_tl 5 TAB    &r_tl 2 ENTER  &r_tl 1 BACKSPACE  &r_tls 3 LSHIFT
+&none  &kp Q         &kp W         &kp E          &kp R          &kp T              &kp Y          &kp U              &kp I          &kp O             &kp P            &kp DELETE
+&none  &l_hm LGUI A  &l_hm LALT S  &l_hm LCTRL D  &l_hm LSHFT F  &kp G              &kp H          &r_hm RSHIFT J     &r_hm RCTRL K  &r_hm LEFT_ALT L  &r_hm LGUI SEMI  &caps_word
+&none  &kp Z         &kp X         &kp C          &kp V          &kp B              &kp N          &kp M              &kp COMMA      &kp DOT           &kp FSLH         &none
+                                   &l_tl 6 ESC    &l_tl 4 SPACE  &l_tls 5 LSHIFT    &r_tl 2 ENTER  &r_tl 1 BACKSPACE  &r_tl 3 TAB
             >;
         };
 
